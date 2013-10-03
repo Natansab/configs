@@ -1,7 +1,7 @@
 Configs
 
 ==========
-This contain my config files for :
+This repo contain my config files for :
 	vim
 	i3-wm
 	xinitrc
