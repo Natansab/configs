@@ -1,0 +1,82 @@
+URxvt.perl-ext-common:		default,keyboard-select,clipboard,url-select
+
+URxvt.perl-lib:				/home/melian/.urxvt/
+
+! https://github.com/muennich/urxvt-perls
+
+URxvt.keysym.M-Escape:		perl:keyboard-select:activate
+URxvt.keysym.M-u:			perl:url-select:select_next
+URxvt.keysym.M-c:			perl:clipboard:copy
+URxvt.keysym.M-v:			perl:clipboard:paste
+URxvt.keysym.M-C-v:			perl:clipboard:paste_escaped
+
+
+! https://github.com/dave0/urxvt-font-size
+
+!URxvt.keysym.C-Up:      perl:font:increment
+!URxvt.keysym.C-Down:    perl:font:decrement
+
+! Url grabbing:
+URxvt.underlineURLs:	false
+URxvt.urlLauncher: 		firefox
+
+! Hilight active window
+URxvt.visualBell:		false
+URxvt.scrollstyle:		None
+URxvt.scrollBar:		false
+URxvt.urgentOnBell:		true
+
+! Transparancy, it's better with xcompmgr
+URxvt*depth:			32
+URxvt*buffered:			true
+URxvt*background:		rgba:0000/0000/0000/dddd
+URxvt*fading:			2%
+URxvt*fadeColor:		grey
+URxvt*inheritPixmap:	false
+URxvt*tintColor:		#080808
+URxvt*transparent:		true
+URxvt*shading:			40
+
+! Term font, bitmap fonts shoud be enabled
+URxvt.font:				xft:Clean
+
+URxvt.termName:			rxvt-unicode-256color
+
+! important scheme
+*background: #111111
+*foreground: #babdb6
+
+! My coloscheme.
+
+! Black
+*color0: #111111
+! Red
+*color1: #FF0000
+! Green
+*color2: #38B104
+! Yellow
+*color3: #ef5939
+! Blue
+*color4: #802525
+! Magenta
+*color5: #960050
+! Cyan
+*color6: #70F0F0
+! White
+*color7: #ffffff
+! Light black
+*color8: #8F8F8F
+! Light red
+*color9: #CA4F4B
+! Light green
+*color10: #A6E22E
+! Light yellow
+*color11: #FD971F
+! Light blue
+*color12: #7070F0
+! Light Magenta
+*color13: #FFB3CE
+! Light Cyan
+*color14: #66D9EF
+! Light white
+*color15: #EFEFEF
