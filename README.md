@@ -1,5 +1,4 @@
 Configs
-
 ==========
 This repo contain my config files for :
 	vim
@@ -8,7 +7,7 @@ This repo contain my config files for :
 	urxvt
 
 Some things are needed :
-	xcompgr
+	xcompmgr
 	hsetroot
 	urxvt - 256 colors
 	i3-wm
