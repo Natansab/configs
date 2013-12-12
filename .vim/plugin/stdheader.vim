@@ -23,11 +23,11 @@ let s:asciiart = [
 
 let s:styles = [
 			\{
-			\'extensions': ['\.c$', '\.h$', '\.cc$', '\.hh$', '\.cpp$', '\.hpp$'],
+			\'extensions': ['\.c$', '\.h$', '\.cc$', '\.hh$', '\.cpp$', '\.hpp$', '\.cs$', '\.css$'],
 			\'start': '/*', 'end': '*/', 'fill': '*'
 			\},
 			\{
-			\'extensions': ['\.htm$', '\.html$', '\.xml$'],
+			\'extensions': ['\.htm$', '\.html$', '\.xml$', '\.php$'],
 			\'start': '<!--', 'end': '-->', 'fill': '*'
 			\},
 			\{
@@ -49,12 +49,32 @@ let s:styles = [
 			\{
 			\'extensions': ['\.el$', '\.emacs$', '\.myemacs$'],
 			\'start': ';', 'end': ';', 'fill': '*'
+			\},
+			\{
+			\'extensions': ['\.pas$', '\.pascal$', '\.p$', '\.pp$'],
+			\'start': '{', 'end': '}', 'fill': '*'
 			\}
 			\]
 
 let s:linelen		= 80
 let s:marginlen		= 5
 let s:contentlen	= s:linelen - (3 * s:marginlen - 1) - strlen(s:asciiart[0])
+
+
+"Modify this part to add manually your user name and mail and uncomment this two functions
+"and comment the other trimlogin and trimmail functions
+"
+"function s:trimlogin ()
+"	let l:USER = "your username"
+"	let l:trimlogin = strpart(USER, 0, 9)
+"	return l:trimlogin
+"endfunction
+"
+"function s:trimemail ()
+"	let l:MAIL = "Your Mail"
+"	let l:trimemail = strpart(MAIL, 0, s:contentlen - 16)
+"	return l:trimemail
+"endfunction
 
 function s:trimlogin ()
 	let l:trimlogin = strpart($USER, 0, 9)
